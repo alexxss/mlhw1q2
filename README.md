@@ -14,8 +14,8 @@
 6. repeat *step 4 ~ 5* for k = 100,1000,10000
 
 # Program Output
-``` shell
-PS D:\1071\機器學習\hw1\q2> D:\Anaconda3\python.exe work.py
+``` sh
+D:\1071\機器學習\hw1\q2> D:\Anaconda3\python.exe work.py
 Calculating freqdist of x_train & x_test...done.
 ~~~~~~~~~~  K = 100  ~~~~~~~~~~
 Obtaining frequency of top-100 words in x_train...done.

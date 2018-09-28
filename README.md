@@ -1,5 +1,5 @@
 # Content
-* execute `work.py`
+* execute `work.py` using python3.x
 * folder `imdb` contains npy's
 
 # Program Flow
@@ -13,9 +13,34 @@
     fit gnb model & calculate accuracy, precision, recall
 6. repeat *step 4 ~ 5* for k = 100,1000,10000
 
+# Program Output
+``` shell
+PS D:\1071\機器學習\hw1\q2> D:\Anaconda3\python.exe work.py
+Calculating freqdist of x_train & x_test...done.
+~~~~~~~~~~  K = 100  ~~~~~~~~~~
+Obtaining frequency of top-100 words in x_train...done.
+Obtaining frequency of top-100 words in x_test...done.
+Training gnb model...done.
+Accuracy = 0.69, Precision = 0.71, Recall = 0.66
+
+~~~~~~~~~~  K = 1000  ~~~~~~~~~~
+Obtaining frequency of top-1000 words in x_train...done.
+Obtaining frequency of top-1000 words in x_test...done.
+Training gnb model...done.
+Accuracy = 0.81, Precision = 0.82, Recall = 0.79
+
+~~~~~~~~~~  K = 10000  ~~~~~~~~~~
+Obtaining frequency of top-10000 words in x_train...done.
+Obtaining frequency of top-10000 words in x_test...done.
+Training gnb model...done.
+Accuracy = 0.66, Precision = 0.77, Recall = 0.46
+
+Press any key to exit.
+```
+
 # `work.py`
 * written in __py3__
-* imports: `sklearn`, `nltk`,  `tqdm`, `numpy`
+* imports: `sklearn`, `nltk`, `numpy`
 * trains a __gaussian nb model__ using __top-k most frequent words__ (k = 100,1000,1000)
 * calculates __accuracy, precision, recall__ of each model
 

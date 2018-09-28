@@ -14,7 +14,7 @@
 6. repeat *step 4 ~ 5* for k = 100,1000,10000
 
 # Program Output
-``` sh
+``` console
 D:\1071\機器學習\hw1\q2> D:\Anaconda3\python.exe work.py
 Calculating freqdist of x_train & x_test...done.
 ~~~~~~~~~~  K = 100  ~~~~~~~~~~

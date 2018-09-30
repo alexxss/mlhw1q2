@@ -1,10 +1,11 @@
-# Content
+# Content Description
 * execute `work.py` using python3.x
 * folder `imdb` contains npy's
+* `Report.pdf` is the work report
 
 # Program Flow
 1. import necessary modules
-2. load npy's from `imdb/`
+2. load npy's from `/imdb`
 3. call `freqdist()`  
     calculate frequency distribution of id in `x_train` and `x_test`
 4. call `topk()`  
@@ -15,25 +16,24 @@
 
 # Program Output
 ``` console
-D:\1071\機器學習\hw1\q2> D:\Anaconda3\python.exe work.py
 Calculating freqdist of x_train & x_test...done.
 ~~~~~~~~~~  K = 100  ~~~~~~~~~~
 Obtaining frequency of top-100 words in x_train...done.
 Obtaining frequency of top-100 words in x_test...done.
 Training gnb model...done.
-Accuracy = 0.69, Precision = 0.71, Recall = 0.66
+Accuracy = 0.69168, Precision = 0.70542, Recall = 0.65824
 
 ~~~~~~~~~~  K = 1000  ~~~~~~~~~~
 Obtaining frequency of top-1000 words in x_train...done.
 Obtaining frequency of top-1000 words in x_test...done.
 Training gnb model...done.
-Accuracy = 0.81, Precision = 0.82, Recall = 0.79
+Accuracy = 0.81004, Precision = 0.82396, Recall = 0.78856
 
 ~~~~~~~~~~  K = 10000  ~~~~~~~~~~
 Obtaining frequency of top-10000 words in x_train...done.
 Obtaining frequency of top-10000 words in x_test...done.
 Training gnb model...done.
-Accuracy = 0.66, Precision = 0.77, Recall = 0.46
+Accuracy = 0.66128, Precision = 0.76809, Recall = 0.46208
 
 Press any key to exit.
 ```

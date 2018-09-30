@@ -52,14 +52,14 @@ def GaussianNaiveBayes():
     gnb.fit(x_train,y_train)
     y_pred = gnb.predict(x_test)
     #print((y_pred != y_test).sum())
-    accuracy = accuracy_score(y_test,y_pred) * 100
-    precision = precision_score(y_test,y_pred) * 100
-    recall = recall_score(y_test,y_pred) * 100
+    accuracy = accuracy_score(y_test,y_pred)
+    precision = precision_score(y_test,y_pred) 
+    recall = recall_score(y_test,y_pred) 
     
     return accuracy,precision,recall
 
 
-# In[ ]:
+# In[6]:
 
 print('Calculating freqdist of x_train & x_test...',end='')
 fd_xtrain = freqdist(x_train_all)
@@ -81,7 +81,7 @@ for k in [100,1000,10000]:
     print('Training gnb model...',end='')
     accuracy,precision,recall = GaussianNaiveBayes()
     print('done.')
-    print('Accuracy = %.3f, Precision = %.3f, Recall = %.3f\n' % (accuracy,precision,recall))
+    print('Accuracy = %.5f, Precision = %.5f, Recall = %.5f\n' % (accuracy,precision,recall))
     
 input('Press any key to exit.')
 
